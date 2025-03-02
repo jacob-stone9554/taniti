@@ -1,3 +1,5 @@
+/* font import */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 /*style reset*/
 * {
   margin: 0;
@@ -5,29 +7,51 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Lato", sans-serif;
+}
+
 /*styles*/
 nav {
   width: 100%;
-  border: 1px solid red;
-  background-color: red;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* temporary, use UL instead of p */
+}
+nav h1 {
+  margin-left: 50px;
+  font-size: 50px;
+}
+nav p {
+  margin-right: 50px;
 }
 
 header {
   width: 100%;
-  border: 1px solid purple;
-  background-color: purple;
+  height: 250px;
+  background-image: url("../images/kurt-cotoaga-FleS9E9K-y8-unsplash.jpg");
+  background-size: cover;
+  background-position: center 62%;
 }
 
 main {
   width: 100%;
+  height: 900px;
   border: 1px solid blue;
-  background-color: blue;
 }
 
 footer {
   width: 100%;
-  border: 1px solid green;
-  background-color: green;
+  height: 45px;
+  background-color: #333333;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
