@@ -1,0 +1,31 @@
+/*style reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*styles*/
+nav {
+  width: 100%;
+  border: 1px solid red;
+  background-color: red;
+}
+
+header {
+  width: 100%;
+  border: 1px solid purple;
+  background-color: purple;
+}
+
+main {
+  width: 100%;
+  border: 1px solid blue;
+  background-color: blue;
+}
+
+footer {
+  width: 100%;
+  border: 1px solid green;
+  background-color: green;
+}
