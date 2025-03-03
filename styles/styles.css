@@ -19,15 +19,32 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* temporary, use UL instead of p */
 }
 nav h1 {
   margin-left: 50px;
   font-size: 50px;
   font-weight: normal;
 }
-nav p {
-  margin-right: 50px;
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+nav ul li {
+  margin-right: 25px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: normal;
+  color: black;
+  transition: text-decoration 1s ease-in-out;
+}
+nav ul li a .current-page {
+  text-decoration: underline;
+}
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
 header {

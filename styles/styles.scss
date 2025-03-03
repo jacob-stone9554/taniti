@@ -27,9 +27,29 @@ nav {
     font-weight: normal;
   }
 
-  /* temporary, use UL instead of p */
-  p {
-    margin-right: 50px;
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+    li {
+      margin-right: 25px;
+      a {
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: normal;
+        color: black;
+        transition: text-decoration 1s ease-in-out;
+
+        .current-page {
+          text-decoration: underline;
+        }
+      }
+
+      a:hover {
+        text-decoration:underline;
+      }
+    }
   }
 }
 
