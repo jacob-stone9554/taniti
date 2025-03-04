@@ -1,5 +1,6 @@
 /* font import */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 /*style reset*/
 * {
   margin: 0;
@@ -8,7 +9,8 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Inter", sans-serif;
+  background-color: #90C7D9;
 }
 
 /*styles*/
@@ -19,6 +21,7 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  background-color: #FFFFFF;
 }
 nav h1 {
   margin-left: 50px;
@@ -53,7 +56,7 @@ nav ul li a:hover {
 header {
   width: 100%;
   height: 250px;
-  background-image: url("../images/kurt-cotoaga-FleS9E9K-y8-unsplash.jpg");
+  background-image: url("../images/kurt-cotoaga-FleS9E9K-y8-unsplash.webp");
   background-size: cover;
   background-position: center 62%;
 }
@@ -65,7 +68,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #1ECDCB;
+  background-color: #90C7D9;
 }
 main .call-to-action {
   width: 100%;
