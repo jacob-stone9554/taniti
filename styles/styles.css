@@ -145,6 +145,14 @@ main .travel-tips .faqs {
   flex-direction: column;
   justify-content: center;
 }
+main .travel-tips .faqs h1 {
+  font-size: 75px;
+  font-family: "Sanchez", cursive;
+  margin-bottom: 30px;
+}
+main .travel-tips .faqs p {
+  font-size: 25px;
+}
 main .stats {
   width: 100%;
   height: 450px;
