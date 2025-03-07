@@ -1,40 +1,52 @@
-/* font import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+$primaryGreen: #293D2C;
+$primaryTan: #C1BEA3;
+$secondaryGreen: #EDF7EF;
+$secondaryTan: #FBF9E9;
 
-/*style reset*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #90C7D9;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $primaryGreen;
+
 }
 
-/*styles*/
 nav {
+  margin-top: 25px;
   width: 100%;
-  height: 100px;
+  height: 15%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   background-color: #FFFFFF;
 
+
   h1 {
-    margin-left: 50px;
+    margin-left: 150px;
     font-size: 50px;
     font-weight: normal;
+    font-family: 'Inter', serif;
   }
 
   ul {
     display: flex;
     flex-direction: row;
     list-style: none;
+    margin-right: 150px;
 
     li {
       margin-right: 25px;
@@ -48,16 +60,19 @@ nav {
         text-decoration: none;
         font-size: 25px;
         font-weight: normal;
-        color: black;
-        transition: text-decoration 1s ease-in-out;
+        color: $primaryGreen;
       }
 
       a.current-page {
         text-decoration: underline;
+        text-underline-offset: 15px;
+        text-decoration-color: $primaryTan;
       }
 
       a:hover {
         text-decoration:underline;
+        text-decoration-color: $primaryTan;
+        text-underline-offset: 15px;
       }
     }
   }
@@ -65,29 +80,47 @@ nav {
 
 header {
   width: 100%;
-  height: 250px;
-  background-image: url("../images/kurt-cotoaga-FleS9E9K-y8-unsplash.webp");
-  background-size: cover;
-  background-position: center 62%;
+  margin-top: 25px;
+
+  h1 {
+    font-family: 'Sanchez', cursive;
+    font-size: 90px;
+    font-weight: normal;
+    margin-left: 150px;
+    margin-bottom: 50px;
+  }
+
+  p {
+    font-size: 25px;
+    margin: 0 0 50px 150px;
+  }
+
+  .img-section {
+    height: 450px;
+    width: 100%;
+    background-image: url("../images/kurt-cotoaga-FleS9E9K-y8-unsplash.webp");
+    background-size: cover;
+    background-position: center 62%;
+  }
 }
 
 main {
-  margin-top: 25px;
+  flex-grow: 1;
   width: 100%;
-  height: 900px;
+  height: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #90C7D9;
 
-  .call-to-action {
+
+  .cards {
     width: 100%;
-    height: 400px;
+    height: 450px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: #F0E2CB;
+    background-color: $secondaryTan;
 
     a {
       text-decoration: none;
@@ -100,30 +133,62 @@ main {
 
     figure {
       background-color: #FFFFFF;
+      border: 1px solid $secondaryGreen;
+      border-radius: 10px;
       height: 350px;
       width: 375px;
-      border-radius: 12px;
 
       img {
+        border-radius: 10px 10px 0 0;
         width: 100%;
-        height: 50%;
-        border-radius: 12px 12px 0 0;
+        height: 60%;
       }
 
       figcaption {
         width: 100%;
-        height: 50%;
+        height: 40%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         font-size: 50px;
-        font-weight: lighter;
+        color: $primaryGreen;
+        font-family: 'Sanchez', cursive;
       }
     }
+  }
 
+
+  .travel-tips {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    .faqs {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+
+      }
+    }
+  }
+
+  .stats {
+    width: 100%;
+    height: 450px;
+    background-color: $secondaryGreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
+
 
 footer {
   width: 100%;
@@ -135,3 +200,5 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+
