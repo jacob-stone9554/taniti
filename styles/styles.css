@@ -108,6 +108,29 @@ main {
   flex-direction: column;
   align-items: center;
 }
+main .about {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+main .about h1 {
+  font-size: 75px;
+  font-family: "Sanchez", cursive;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+main .about p {
+  font-size: 25px;
+}
+main .about .paragraph {
+  width: 40%;
+}
+main .about .paragraph p {
+  font-size: 30px;
+}
 main .cards {
   width: 100%;
   height: 450px;
