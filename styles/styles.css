@@ -32,6 +32,16 @@ nav h1 {
   font-weight: normal;
   font-family: "Inter", serif;
 }
+nav h1 a {
+  text-decoration: none;
+  font-weight: normal;
+  color: #293D2C;
+}
+nav h1 a:hover {
+  text-decoration: underline;
+  text-decoration-color: #C1BEA3;
+  text-underline-offset: 15px;
+}
 nav ul {
   display: flex;
   flex-direction: row;
@@ -155,6 +165,7 @@ main .travel-tips .faqs h1 {
   font-size: 75px;
   font-family: "Sanchez", cursive;
   margin-bottom: 30px;
+  font-weight: normal;
 }
 main .travel-tips .faqs p {
   font-size: 25px;
@@ -176,8 +187,30 @@ main .stats {
   height: 450px;
   background-color: #EDF7EF;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-around;
+}
+main .stats h1 {
+  font-size: 75px;
+  font-family: "Sanchez", cursive;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+main .stats p {
+  font-size: 25px;
+}
+main .stats ul {
+  list-style: none;
+  font-size: 25px;
+  width: 35%;
+}
+main .stats ul li {
+  padding: 10px;
+  border-bottom: 1px solid #C1BEA3;
+}
+main .stats ul li:last-child {
+  border-bottom: 0;
 }
 
 footer {

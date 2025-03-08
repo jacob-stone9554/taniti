@@ -40,6 +40,18 @@ nav {
     font-size: 50px;
     font-weight: normal;
     font-family: 'Inter', serif;
+
+    a {
+      text-decoration: none;
+      font-weight: normal;
+      color: $primaryGreen;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      text-decoration-color: $primaryTan;
+      text-underline-offset: 15px;
+    }
   }
 
   ul {
@@ -182,6 +194,7 @@ main {
         font-size: 75px;
         font-family: 'Sanchez', cursive;
         margin-bottom: 30px;
+        font-weight: normal;
       }
 
       p {
@@ -210,8 +223,37 @@ main {
     height: 450px;
     background-color: $secondaryGreen;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+
+
+
+    h1 {
+      font-size: 75px;
+      font-family: 'Sanchez', cursive;
+      margin-bottom: 30px;
+      font-weight: normal;
+    }
+
+    p {
+      font-size: 25px;
+    }
+
+    ul {
+      list-style: none;
+      font-size: 25px;
+      width: 35%;
+
+      li {
+        padding: 10px;
+        border-bottom: 1px solid $primaryTan;
+      }
+
+      li:last-child {
+        border-bottom: 0;
+      }
+    }
   }
 }
 
